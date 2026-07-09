@@ -1,0 +1,52 @@
+# Stock Analysis Tool
+
+A Python tool that analyzes historical stock performance for Apple (AAPL), Microsoft (MSFT), and Tesla (TSLA) using `pandas` and `yfinance`.
+
+## What it does
+
+- Pulls historical daily closing prices for AAPL, MSFT, and TSLA
+- Calculates **daily returns** (day-over-day % change)
+- Calculates **average return** (mean daily return over the period)
+- Calculates **volatility** (standard deviation of daily returns)
+- Calculates **20-day moving averages** to smooth out short-term price noise
+- Visualizes price vs. moving average for each stock
+
+## Results (Jan 2025 – Jan 2026)
+
+| Ticker | Average Daily Return | Volatility (Std Dev) |
+|--------|----------------------|------------------------|
+| AAPL   | *TODO: add value*    | 0.0205 |
+| MSFT   | *TODO: add value*    | 0.0153 |
+| TSLA   | *TODO: add value*    | 0.0399 |
+
+Tesla showed roughly double the daily volatility of Apple and Microsoft over this period, consistent with its reputation as a higher-risk, higher-swing stock.
+
+## Charts
+
+**AAPL: Price vs. 20-Day Moving Average**
+*(screenshot here)*
+
+**MSFT: Price vs. 20-Day Moving Average**
+*(screenshot here)*
+
+**TSLA: Price vs. 20-Day Moving Average**
+*(screenshot here)*
+
+## How to run it
+
+1. Open `stock_analysis.ipynb` in [Google Colab](https://colab.research.google.com/)
+2. Run all cells (Runtime → Run all)
+3. Data is pulled live from Yahoo Finance via `yfinance`, so results update automatically each time it's run
+
+## Built with
+
+- Python
+- pandas
+- yfinance
+- matplotlib
+
+## What I'd improve next
+
+- Add more tickers for broader comparison
+- Backtest a simple trading strategy using the moving average crossover
+- Deploy as an interactive web dashboard
